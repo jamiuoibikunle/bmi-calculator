@@ -46,6 +46,7 @@ input:focus {
   margin: auto;
   width: max-content;
   padding-bottom: 1rem;
+  font-size: 2rem;
 }
 
 @keyframes comeout {
