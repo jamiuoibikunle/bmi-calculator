@@ -1,0 +1,56 @@
+.App {
+  transform: scale(0);
+  animation: comeout 3s forwards;
+  animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  opacity: 0;
+   position: absolute;
+   top: 0;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   margin: auto;
+   width: max-content;
+   height: max-content;
+   color: #0F172A;
+   background: url(../resources/wave.svg);
+   background-repeat: no-repeat;
+   padding: 4rem 2rem;
+   border-radius: 1rem 0;
+   box-shadow:
+    1.3px 1.3px 2.5px rgba(0, 0, 0, 0.011),
+    3.1px 3.1px 6.1px rgba(0, 0, 0, 0.016),
+    5.8px 5.8px 11.4px rgba(0, 0, 0, 0.02),
+    10.3px 10.3px 20.3px rgba(0, 0, 0, 0.024),
+    19.2px 19.2px 38px rgba(0, 0, 0, 0.029),
+    46px 46px 91px rgba(0, 0, 0, 0.04);
+  }
+
+
+input {
+  display: block;
+  padding: 1rem;
+  margin: 1rem;
+  outline: none;
+  border: 1px solid #0F172A;
+  border-radius: 10px;
+  transition: 1s;
+}
+
+input:focus {
+  border: 1px solid #15803D;
+  background-color: #FEF08A;
+  transition: 1s;
+}
+
+.bmi {
+  margin: auto;
+  width: max-content;
+  padding-bottom: 1rem;
+}
+
+@keyframes comeout {
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
